@@ -10,8 +10,19 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     
         <style>
-            .nav-bar {
-                background-color: #edfaf8;
+            @media (max-width:500px) {
+           .cloud {display: none;}
+            }
+            @media (max-width:750px) {
+           .cloud {display: none;}
+            }
+            .container {
+                background-color: #ebf0ff;
+            }
+            #content {
+                background-color:#fafbff ;
+                margin: 5px;
+                font-family: Georgia ;
             }
 
 
@@ -25,25 +36,97 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="nav-bar">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                        </li>
+                    </ul>
                     <ul class="nav justify-content-end">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" href="page-2.html" target="_self">Max Temperature</a>
-                              <a class="dropdown-item" href="#">Humidity</a>
-                              <a class="dropdown-item" href="#">Cloudiness</a>
-                              <a class="dropdown-item" href="#">Wind Speed</a>
+                                <a class="dropdown-item" href="page-2.html" target="_self">Max Temperature</a>
+                                <a class="dropdown-item" href="#">Humidity</a>
+                                <a class="dropdown-item" href="#">Cloudiness</a>
+                                <a class="dropdown-item" href="#">Wind Speed</a>
                             </div>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Comparison</a>
+                            <a class="nav-link" href="#">Comparison</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Data</a>
+                            <a class="nav-link" href="#">Data</a>
                         </li>
-                      </ul>
+                        </ul>
                 </div>
             </div>
         </div>
+        </br>
+        <div class="row">
+            <div class="col-md-2">
+                <img src="http://clipart-library.com/images/AcbKbbKKi.png"
+                alt = "Cloud" width = "80" height="60">
+            </div>
+            <div class="cloud col-md-2">
+                <img src="http://clipart-library.com/images/AcbKbbKKi.png"
+                alt = "Cloud" width = "80" height="60">
+            </div>
+            <div class="cloud col-md-2">
+                <img src="http://clipart-library.com/images/AcbKbbKKi.png"
+                alt = "Cloud" width = "80" height="60">
+            </div>
+            <div class="cloud col-md-2">
+                <img src="http://clipart-library.com/images/AcbKbbKKi.png"
+                alt = "Cloud" width = "80" height="60">
+            </div>
+            <div class="cloud col-md-2">
+                <img src="http://clipart-library.com/images/AcbKbbKKi.png"
+                alt = "Cloud" width = "80" height="60">
+            </div>
+            <div class="cloud col-md-2">
+                <img src="http://clipart-library.com/images/AcbKbbKKi.png"
+                alt = "Cloud" width = "80" height="60">
+            </div>
+        </div>
+        </br>
+        <div class="row">
+            <div id="content" class="col-md-7">
+                <h1>Project Summary</h1>
+                </br>
+                <p>
+                    In this project, weather data from the OpenWeather API 
+                    was used to study weather patterns across the world's latitudes.
+                    This data was then used to answer the question, "How does weather change
+                    as we approach the equator?".
+                </p>
+                <p>
+                    The parameters researched were as follows: Maximum Temperature,
+                    Humidity, Cloudiness, and Wind Speed. You can use the navigation bar
+                    or the figures to the right to examine each parameter separately, as well as
+                    review the full analysis. 
+                </p>
+            </div>
+            <div id="content" class="col-md-4">
+                <h2>Visualizations</h2>
+                </br>
+                <a href="page-2.html" target="_self">
+                    <img src="Images/temp_vs_lat.png" width="100" height="80">
+                </a>
+                <a href="page-3.html" target="_self">
+                    <img src="Images/hum_vs_lat.png" width="100" height="80">
+                </a>
+                <a href="page-4.html" target="_self">
+                    <img src="Images/cloud_vs_lat.png" width="100" height="80">
+                </a>
+                <a href="page-5.html" target="_self">
+                    <img src="Images/wind_vs_lat.png" width="100" height="80">
+                </a>
+
+            </div>
+
+
+        </div>
+
+
 
           
 
