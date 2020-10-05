@@ -21,15 +21,20 @@
             }
             .menu {
                 background-color:#ebf0ff ;
-                margin-left: 10px;
+                margin-left: 48px;
                 font-family: Georgia ;
             }
+            .image {
+                margin: 1px;
+            }
+
             .p {
                 background-color:#ebf0ff ;
                 font-family: Georgia ;
             }
             .selected {
-                border:
+                border:red;
+                border-style:solid;
             }
 
         </style>
@@ -48,16 +53,16 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="page-2.html" target="_self">Max Temperature</a>
-                                <a class="dropdown-item" href="page-3.html">Humidity</a>
-                                <a class="dropdown-item" href="page-4.html">Cloudiness</a>
-                                <a class="dropdown-item" href="page-5.html">Wind Speed</a>
+                                <a class="dropdown-item" href="max-temp.html" target="_self">Max Temperature</a>
+                                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="wind.html">Wind Speed</a>
                             </div>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Comparison</a>
+                            <a class="nav-link" href="comparison.html">Comparison</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Data</a>
+                            <a class="nav-link" href="data.html">Data</a>
                         </li>
                         </ul>
                 </div>
@@ -77,27 +82,28 @@
                 <h2>Visualizations</h2>
                 </br>
                 <a href="max-temp.html" target="_self">
-                    <img class="selected" src="Images/temp_vs_lat.png" width="100" height="80">
+                    <img class="image selected" src="Images/temp_vs_lat.png" width="100" height="80">
                 </a>
                 <a href="humidity.html" target="_self">
-                    <img src="Images/hum_vs_lat.png" width="100" height="80">
+                    <img class="image" src="Images/hum_vs_lat.png" width="100" height="80">
                 </a>
                 <a href="cloudiness.html" target="_self">
-                    <img src="Images/cloud_vs_lat.png" width="100" height="80">
+                    <img class="image" src="Images/cloud_vs_lat.png" width="100" height="80">
                 </a>
                 <a href="wind.html" target="_self">
-                    <img src="Images/wind_vs_lat.png" width="100" height="80">
+                    <img class="image" src="Images/wind_vs_lat.png" width="100" height="80">
                 </a>
             </div>
 
-            <div class="col-md-7">
+            <div class="content col-md-7">
+            </br>
                 <p>
                     This plot of Max Temperature vs. Latitude confirms the 
                     commonly-held hypothesis that temperature increases as 
                     we approach the equator.
                 </p>
             </div>
-            <div class="col-md-7">
+            <div class="content col-md-7">
                 <p>
                     Namely, as one increases in latitude from -100 to 0°
                     and decreases from 100 to 0°, maximum temperature for
