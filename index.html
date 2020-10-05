@@ -19,9 +19,13 @@
             .container {
                 background-color: #ebf0ff;
             }
-            #content {
+            .content {
                 background-color:#fafbff ;
-                margin: 5px;
+                font-family: Georgia ;
+            }
+            .menu {
+                background-color:#fafbff ;
+                margin-left: 10px;
                 font-family: Georgia ;
             }
 
@@ -38,23 +42,23 @@
                 <div class="nav-bar">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
+                        <a class="nav-link active" href="index.html">Summary</a>
                         </li>
                     </ul>
                     <ul class="nav justify-content-end">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="page-2.html" target="_self">Max Temperature</a>
-                                <a class="dropdown-item" href="#">Humidity</a>
-                                <a class="dropdown-item" href="#">Cloudiness</a>
-                                <a class="dropdown-item" href="#">Wind Speed</a>
+                                <a class="dropdown-item" href="max-temp.html" target="_self">Max Temperature</a>
+                                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="wind.html">Wind Speed</a>
                             </div>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Comparison</a>
+                            <a class="nav-link" href="comparison.html">Comparison</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Data</a>
+                            <a class="nav-link" href="data.html">Data</a>
                         </li>
                         </ul>
                 </div>
@@ -89,7 +93,7 @@
         </div>
         </br>
         <div class="row">
-            <div id="content" class="col-md-7">
+            <div class="content col-md-7">
                 <h1>Project Summary</h1>
                 </br>
                 <p>
@@ -105,7 +109,7 @@
                     review the full analysis. 
                 </p>
             </div>
-            <div id="content" class="col-md-4">
+            <div class="menu col-md-4">
                 <h2>Visualizations</h2>
                 </br>
                 <a href="page-2.html" target="_self">
