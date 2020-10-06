@@ -11,7 +11,7 @@
     
         <style>
             @media (max-width:750px) {
-           .cloud {display: none;}
+            .cloud {display: none;}
             }
             .container {
                 background-color: #ebf0ff;
@@ -21,53 +21,79 @@
                 font-family: Georgia ;
             }
             .menu {
-                background-color:#fafbff ;
-                margin-left: 10px;
                 font-family: Georgia ;
             }
-
-
-
+            .viz {
+                margin:4px;
+            }
+            #home {
+                font-weight:bold;
+            }
+            #nav {
+                background-color: #ebf0ff;
+                font-size:large;
+            }
+            #summary {
+                font-weight: bold;
+                color:#66aaad;
+            }
+            @media (max-width:750px) {
+            .container {background-color:#fafbff;}
+            #nav {background-color:#fafbff;}
+            }
 
         </style>
     
     
     </head>
+
     <body class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="nav-bar">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Summary</a>
-                        </li>
-                    </ul>
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="max-temp.html" target="_self">Max Temperature</a>
-                                <a class="dropdown-item" href="humidity.html">Humidity</a>
-                                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                                <a class="dropdown-item" href="wind.html">Wind Speed</a>
-                            </div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="comparison.html">Comparison</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="data.html">Data</a>
-                        </li>
-                        </ul>
+
+    <div class="row">
+        <div class="col-md-12">
+
+    <nav id = "nav" class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a id="summary" class="nav-link" href="index.html">Summary</a>
+              </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="max-temp.html" target="_self">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html" target="_self">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html" target="_self">Cloudiness</a>
+                  <a class="dropdown-item" href="wind.html" target="_self">Wind Speed</a>
                 </div>
-            </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparisons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
         </div>
-        </br>
+      </nav>
+      <hr>
+
+    </div>
+
+    </div>
+
+    </br>
         <div class="row">
             <div class="col-md-2">
                 <img src="http://clipart-library.com/images/AcbKbbKKi.png"
                 alt = "Cloud" width = "80" height="60">
             </div>
-            <div class="col-md-2">
+            <div class="cloud col-md-2">
                 <img src="http://clipart-library.com/images/AcbKbbKKi.png"
                 alt = "Cloud" width = "80" height="60">
             </div>
@@ -89,10 +115,11 @@
             </div>
         </div>
         </br>
+    </br>
         <div class="row">
-            <div class="content col-md-7">
+            <div class="content col-md-8">
                 <h1>Project Summary</h1>
-                </br>
+                <hr>
                 <p>
                     In this project, weather data from the OpenWeather API 
                     was used to study weather patterns across the world's latitudes.
@@ -109,19 +136,18 @@
             <div class="menu col-md-4">
                 <h2>Visualizations</h2>
                 </br>
-                <a href="max-temp.html" target="_self">
+                <a class="viz" href="max-temp.html" target="_self">
                     <img src="Images/temp_vs_lat.png" width="100" height="80">
                 </a>
-                <a href="humidity.html" target="_self">
+                <a class="viz" href="humidity.html" target="_self">
                     <img src="Images/hum_vs_lat.png" width="100" height="80">
                 </a>
-                <a href="cloudiness.html" target="_self">
+                <a class="viz" href="cloudiness.html" target="_self">
                     <img src="Images/cloud_vs_lat.png" width="100" height="80">
                 </a>
-                <a href="wind.html" target="_self">
+                <a class="viz" href="wind.html" target="_self">
                     <img src="Images/wind_vs_lat.png" width="100" height="80">
                 </a>
-
             </div>
 
 

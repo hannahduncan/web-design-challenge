@@ -21,6 +21,10 @@
                 background-color:#ebf0ff ;
                 font-family: Georgia ;
             }
+            #current {
+                font-weight:bold;
+            }
+            
 
 
         </style>
@@ -29,39 +33,43 @@
     <body class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="nav-bar">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Summary</a>
-                        </li>
-                    </ul>
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="max-temp.html" target="_self">Max Temperature</a>
-                                <a class="dropdown-item" href="humidity.html">Humidity</a>
-                                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                                <a class="dropdown-item" href="wind.html">Wind Speed</a>
-                            </div>
-                        <li class="nav-item">
-                            <a class="nav-link" href="comparison.html">Comparison</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="data.html">Data</a>
-                        </li>
-                        </ul>
-                </div>
+    
+        <nav id = "nav" class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a id="summary" class="nav-link" href="index.html">Summary</a>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="max-temp.html" target="_self">Max Temperature</a>
+                      <a class="dropdown-item" href="humidity.html" target="_self">Humidity</a>
+                      <a class="dropdown-item" href="cloudiness.html" target="_self">Cloudiness</a>
+                      <a class="dropdown-item" href="wind.html" target="_self">Wind Speed</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a id = "current" class="nav-link" href="comparison.html">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="data.html">Data</a>
+                </li>
+              </ul>
             </div>
-        </div>
+          </nav>
+          <hr>
     </br>
         <div class="row">
             <div class="content col-md-12">
                 <h1>Visualizations</h1>
-                <hr>
             </div>
         </div>
-            </br>
         <div class="row">
             <div class="content col-md-12">
                 <p>
@@ -70,25 +78,26 @@
                 </p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
+    </br>
+        <div class="content row">
+            <div class="col-md-6">Max Temp vs. Latitude:
                 <a href="max-temp.html" target="_self">
                     <img src="Images/temp_vs_lat.png" width="300" height="200">
                 </a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6">Humidity (%) vs. Latitude:
                 <a href="humidity.html" target="_self">
                     <img src="Images/hum_vs_lat.png" width="300" height="200">
                 </a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
+        <div class="content row">
+            <div class="col-md-6">Cloudiness (%) vs. Latitude:
                 <a href="cloudiness.html" target="_self">
                     <img src="Images/cloud_vs_lat.png" width="300" height="200">
                 </a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6">Wind Speed vs. Latitude:
                 <a href="wind.html" target="_self">
                     <img src="Images/wind_vs_lat.png" width="300" height="200">
                 </a>
